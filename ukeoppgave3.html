@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ukeoppgave3</title>
+    <link rel="stylesheet" href="Styles.Css">
+    
+</head>
+<body>
+     <div class="storyBox" id="storyOutput"></div>
+
+     <div class="startRow choiceBoxes" onclick="chooseFirstWord(this)">hear</div>
+
+     <div class="startRow choiceBoxes"  onclick="chooseSecondWord(this)">ballad</div>
+
+     <div class="startRow choiceBoxes"  onclick="chooseThirdWord(this)">heavy</div>
+
+     <div class="startRow choiceBoxes" onclick="chooseFourthWord(this)">begins</div>
+
+     <div class="startRow choiceBoxes" onclick="chooseFifthWord(this)">brave</div>
+
+     <div class="startRow choiceBoxes" onclick="chooseSixthWord(this)">storm</div>
+
+     <div class="startRow choiceBoxes" onclick="chooseSeventhWord(this)">rain</div>
+
+     <div class="startRow choiceBoxes" onclick="chooseEightWord(this)">mighty</div>
+
+     <div class="startRow choiceBoxes" onclick="chooseNinthWord(this)">weather</div>
+
+     <div class="startRow choiceBoxes" onclick="chooseTenthWord(this)">tune</div>
+
+     <div class="startRow choiceBoxes" onclick="chooseEleventhhWord(this)">hidings</div>
+
+     <div class="startRow choiceBoxes" onclick="chooseTwelfthWord(this)">Lightning</div>
+
+     <div class="startRow choiceBoxes" onclick="chooseThirteenthWord(this)">more</div>
+
+     <div class="startRow choiceBoxes" onclick="chooseFourteenWord(this)">morning</div>
+
+     <div class="startRow choiceBoxes" onclick="chooseFifteenthWord(this)">dry</div>
+
+     <div class="startRow choiceBoxes" onclick="chooseSixteenthWord(this)">dark</div>
+
+     <div class="startRow choiceBoxes" onclick="chooseSeventeenthWord(this)">song</div>
+
+     <div class="startRow choiceBoxes" onclick="chooseEighteenthWord(this)">play</div>
+
+     <div class="startRow choiceBoxes" onclick="chooseNineteenthWord(this)">curesed</div>
+
+     <script>
+
+      const output = document.getElementById("storyOutput");
+
+        let firstWord = "___";
+        let secondWord = "___";
+        let thirdWord = "___";
+        let fourthWord = "___";
+        let fiftheWord = "___";
+        let sisxtheWord = "___";
+        let seventhWord = "___";
+        let eightWord = "___";
+        let ninthWord = "___";
+        let tenthWord = "___";
+        let eleventhWord = "___";
+        let twelfthWord = "___";
+        let thirteenthWord = "___";
+        let fourteenWord = "___";
+        let fifteenthWord = "___";
+        let sisxthenWord = "___";
+        let seventeenthWord = "___";
+        let eighteenthWord = "___";
+        let nineteenthWord = "___";
+        
+        buildstory();
+        
+        function buildstory(){
+            output.innerHTML = `
+
+            Can you ${firstWord} a song is born.
+            Its the ${secondWord} of the storm. 
+            Thunder, ${thirdWord} wind. 
+            The song of storm ${fourthWord}.
+
+            so be ${fiftheWord}, Play the song.
+            And a heavy ${sisxtheWord} will come.
+
+            Feel the ${seventhWord} feel the snow. 
+            Feel the wind his ${eightWord} blow.
+            ${ninthWord} in a song. 
+
+            Play the ${tenthWord} , load and clear. 
+
+            Rain is ${eleventhWord} in the song. 
+            ${twelfthWord} strikes the ground. 
+
+            No ${thirteenthWord} rain clear blue sky.
+            The ${fourteenWord} sun makes all things ${fifteenthWord}.
+            All ${sisxthenWord} clouds are gone.
+            But the ${seventeenthWord} of storm goes on.
+
+            ${eighteenthWord} the song and you will see.
+            Its a ${nineteenthWord} melody.
+            `;
+
+            // output.innerHTML = `
+
+            // Can you ' + firstWord + ' a song is born.
+            // It`s the ' + secondWord + ' of the storm.
+            //Thunder,' + thirdWord + ' wind.
+            //The song of storm ' + fourthWord + '.
+
+
+            //so be ' + fiftheWord + ' Play the song.
+           //And a heavy ' + sisxtheWord + ' will come.
+
+
+          // Feel the ' + seventhWord + ' feel the snow. 
+         //Feel the wind his ' + eightWord + ' blow.
+        // ' + ninthWord + ' in a song. 
+
+        //Play the ' + tenthWord + ' , load and clear. 
+
+        //Rain is ' + eleventhWord + ' in the song. 
+        //' + twelfthWord + ' strikes the ground. 
+
+        //No ' + thirteenthWord + ' rain clear blue sky.
+        //The ' + fourteenWord + ' sun makes all things '+ fifteenthWord +'.
+        //All ' + sisxthenWord + ' clouds are gone.
+        //But the ' + seventeenthWord + ' of storm goes on.
+
+        //' + eighteenthWord + ' the song and you will see.
+        //It`s a ' + nineteenthWord + ' melody.
+        //`; 
+        }
+
+
+        function chooseFirstWord(choice){
+            firstWord = choice.innerHTML;
+            buildstory();
+        }
+
+        function chooseSecondWord(choice){
+            secondWord = choice.innerHTML;
+            buildstory();
+        }
+
+
+        function chooseThirdWord(choice){
+            thirdWord = choice.innerHTML;
+            buildstory();
+        }
+
+         function chooseFourthWord(choice){
+            fourthWord = choice.innerHTML;
+            buildstory();
+         }
+
+        function chooseFifthWord(choice){
+            fiftheWord = choice.innerHTML;
+            buildstory();
+        }
+
+        function chooseSixthWord(choice){
+            sisxtheWord = choice.innerHTML;
+            buildstory();
+        }
+
+        function chooseSeventhWord(choice){
+            seventhWord = choice.innerHTML;
+            buildstory();
+        }
+
+        function chooseEightWord(choice){
+            eightWord = choice.innerHTML;
+            buildstory();
+        }
+
+        function chooseNinthWord(choice){
+            ninthWord = choice.innerHTML;
+            buildstory();
+        }
+
+        function chooseTenthWord(choice){
+            tenthWord = choice.innerHTML;
+            buildstory();
+        }
+
+        function chooseEleventhhWord(choice){
+            eleventhWord = choice.innerHTML;
+            buildstory();
+        }
+
+        function chooseTwelfthWord(choice){
+            twelfthWord = choice.innerHTML;
+            buildstory();
+        }
+
+        function chooseThirteenthWord(choice){
+            thirteenthWord = choice.innerHTML;
+            buildstory();
+        }
+
+        function chooseFourteenWord(choice){
+            fourteenWord = choice.innerHTML;
+            buildstory();
+        }
+
+        function chooseFifteenthWord(choice){
+            fifteenthWord = choice.innerHTML;
+            buildstory();
+        }
+
+        function chooseSixteenthWord(choice){
+            sisxthenWord = choice.innerHTML;
+            buildstory();
+        }
+
+        function chooseSeventeenthWord(choice){
+            seventeenthWord = choice.innerHTML;
+            buildstory();
+        }
+
+        function chooseEighteenthWord(choice){
+            eighteenthWord = choice.innerHTML
+            buildstory();
+        }
+
+        function chooseNineteenthWord(choice){
+            nineteenthWord = choice.innerHTML;
+            buildstory();
+        }
+
+        </script>
+    
+
+
+
+</body>
+</html>
